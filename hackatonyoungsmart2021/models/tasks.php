@@ -5,7 +5,7 @@
     private $conn;
     private $table = 'tasks';
 
-    // Post Properties
+    // budget Properties
     public $id;
     public $name;
     public $data;
@@ -17,7 +17,7 @@
       $this->conn = $db;
     }
 
-    // // Get Posts
+    // // Get budget
     public function read() {
       // Create query
       $query = 'SELECT * FROM ' . $this->table;
@@ -31,7 +31,7 @@
       return $stmt;
     }
 
-    // //get signle post
+    // //get signle budget
     public function read_single()
     {
         $query = 'SELECT *
@@ -59,7 +59,7 @@
         //$this->category_name = $row['category_name'];
     }
 
-    //Create post
+    //Create budget
     public function create()
     {
         //create query
