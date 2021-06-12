@@ -5,7 +5,7 @@
     private $conn;
     private $table = 'shop';
 
-    // Post Properties
+    // budget Properties
     public $id;
     public $name;
     public $amount;
@@ -17,7 +17,7 @@
       $this->conn = $db;
     }
 
-    // // Get Posts
+    // // Get budget
     public function read() {
       // Create query
       $query = 'SELECT  * FROM ' . $this->table;
@@ -58,7 +58,7 @@
         $this->endPrice = $row['endPrice'];
     }
 
-    // //Create post
+    // //Create budget
     public function create()
     {
         //create query
