@@ -5,7 +5,7 @@
     private $conn;
     private $table = 'budget';
 
-    // Post Properties
+    // budget Properties
     public $id;
     public $name;
     public $amount;
@@ -16,7 +16,7 @@
       $this->conn = $db;
     }
 
-    // Get Posts
+    // Get budget
     public function read() {
       // Create query
       $query = 'SELECT * FROM ' . $this->table;
@@ -58,7 +58,7 @@
       return $stmt;
     }
 
-    // //get signle post
+    // //get signle budget
     public function read_single()
     {
         $query = 'SELECT *
